@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: apregitz <apregitz@student.42heilbronn.    +#+  +:+       +#+        */
+/*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 03:00:11 by apregitz          #+#    #+#             */
-/*   Updated: 2024/11/27 12:12:29 by apregitz         ###   ########.fr       */
+/*   Updated: 2025/01/05 13:54:39 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,17 +35,15 @@ unsigned int	ft_strlcat(char *dest, const char *src, unsigned int size)
 	return (c_dest + c_src);
 }
 
-#include <stdio.h>
-#include <string.h>
-int main(void)
-{
-    char str1[5] = "test";
-    char str2[8] = "hi ";
-    unsigned int num;
-
-    num = ft_strlcat(str2, str1, 8);
-	// num = strlcat(str2, str1, 5);
-    printf("%s\n%d\n", str2, num);
-    
-    return 0;
-}
+// #include <stdio.h>
+// #include <string.h>
+// int main(void)
+// {
+//     char str1[5] = "test";
+//     char str2[8] = "hi ";
+//     unsigned int num;
+//     num = ft_strlcat(str2, str1, 8);
+// 	// num = strlcat(str2, str1, 5);
+//     printf("%s\n%d\n", str2, num);
+//     return 0;
+// }
