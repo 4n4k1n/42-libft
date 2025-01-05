@@ -6,29 +6,29 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/04 20:53:22 by anakin            #+#    #+#             */
-/*   Updated: 2025/01/04 22:56:31 by anakin           ###   ########.fr       */
+/*   Updated: 2025/01/05 13:53:15 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdio.h>
 
-char *ft_strdup(const char *string)
+char	*ft_strdup(const char *string)
 {
-    int len;
-    int i;
-    char *new_arr;
+	int		len;
+	int		i;
+	char	*new_arr;
 
-    len = 0;
-    while (string[len++]);
-    new_arr = (char *)malloc(sizeof(char ) * (len + 1));
-    if (!new_arr)
-        return (NULL);
-    i = -1;
-    while (++i < len)
-        new_arr[i] = string[i];
-    new_arr[i] = '\0';
-    return (new_arr);
+	len = 0;
+	while (string[len])
+		len++;
+	new_arr = (char *)malloc(sizeof(char ) * (len + 1));
+	if (!new_arr)
+		return (NULL);
+	i = -1;
+	while (++i < len)
+		new_arr[i] = string[i];
+	new_arr[i] = '\0';
+	return (new_arr);
 }
 
 // int main(void)
