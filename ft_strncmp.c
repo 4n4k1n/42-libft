@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 11:50:58 by apregitz          #+#    #+#             */
-/*   Updated: 2025/01/05 00:00:15 by anakin           ###   ########.fr       */
+/*   Updated: 2025/01/05 13:45:37 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 // {
 // 	char str1[5] = "tesT";
 // 	char str2[5] = "test";
-	
+
 // 	printf("%d", ft_strncmp(str1, str2, 4));
 // 	return (0);
 // }
