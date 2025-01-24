@@ -6,15 +6,15 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/05 15:15:50 by anakin            #+#    #+#             */
-/*   Updated: 2025/01/05 15:20:13 by anakin           ###   ########.fr       */
+/*   Updated: 2025/01/05 16:29:49 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(int ch)
+int	ft_tolower(int c)
 {
-	if (ch >= 'A' && ch <= 'Z')
-		return (ch + 32);
-	return (ch);
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
+	return (c);
 }
 
 // #include <stdio.h>
