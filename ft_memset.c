@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 16:21:30 by anakin            #+#    #+#             */
-/*   Updated: 2025/01/07 16:37:11 by anakin           ###   ########.fr       */
+/*   Updated: 2025/01/24 14:48:47 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,23 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-    size_t i;
-    char *ch_arr;
+	size_t  i;
 
-    ch_arr = (char *)b;
-    i = -1;
-    while (++i < len)
-        ch_arr[i] = (char)c;
-    return (b);
+    i = 0;
+    while (i < len)
+    {
+        ((unsigned char *)b)[i] = (unsigned  char)c;
+        i++;
+    }
+	return (b);
 }
 
-int main(void)
-{
-    char str[] = "test";
+// int main(void)
+// {
+//     char str[] = "test test";
 
-    printf("%s\n", str);
-    ft_memset(str, 'X', 4);
-    printf("%s\n", str);
-    return (0);
-}
+//     printf("%s\n", str);
+//     ft_memset(str, 'X', 9);
+//     printf("%s\n", str);
+//     return (0);
+// }
