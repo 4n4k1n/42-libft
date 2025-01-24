@@ -6,15 +6,15 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/05 15:06:14 by anakin            #+#    #+#             */
-/*   Updated: 2025/01/05 15:18:23 by anakin           ###   ########.fr       */
+/*   Updated: 2025/01/05 16:29:46 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int ch)
+int	ft_toupper(int c)
 {
-	if (ch >= 'a' && ch <= 'z')
-		return (ch - 32);
-	return (ch);
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
+	return (c);
 }
 
 // #include <stdio.h>
