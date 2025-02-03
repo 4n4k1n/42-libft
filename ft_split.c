@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 14:25:03 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/03 15:56:41 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/03 16:01:50 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,8 @@ char **ft_split(char const *s, char c)
 
 // int main(void)
 // {
-//     char **words = ft_split("  thisxisxaxtest!", 'x');
+//     char **words = ft_split("hello this is a test for split. "
+// 	"i hope this shit works. hate this function.", ' ');
 
 //     for (int i = 0; words[i]; i++)
 //     {
