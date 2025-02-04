@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 18:36:11 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/04 18:53:10 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/04 19:41:00 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char *arr;
-	int len;
+	char	*arr;
+	int		len;
 
 	if (!s || !f)
 		return (NULL);
@@ -38,7 +38,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 // 		return (' ');
 // 	return (c);
 // }
-
 
 // #include <stdio.h>
 // int main(void)
