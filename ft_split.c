@@ -6,24 +6,24 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 14:25:03 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/03 16:01:50 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/04 16:31:13 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <stdio.h>
 
-const char *get_word_index(const char *s, char c)
+const char	*get_word_index(const char *s, char c)
 {
 	while (*s == c)
 		s++;
 	return (s);
 }
 
-int count_words(char const *s, char c)
+int	count_words(char const *s, char c)
 {
-	int count;
-	int active;
+	int	count;
+	int	active;
 
 	active = 0;
 	count = 0;
@@ -41,13 +41,13 @@ int count_words(char const *s, char c)
 	return (count);
 }
 
-char *alloc_word(const char **s, char c)
+char	*alloc_word(const char **s, char c)
 {
-	int i;
-	char *arr;
+	int		i;
+	char	*arr;
 
 	i = 0;
-	while((*s)[i] != c && (*s)[i])
+	while ((*s)[i] != c && (*s)[i])
 		i++;
 	arr = (char *)malloc(sizeof(char ) * (i + 1));
 	if (!arr)
@@ -63,15 +63,15 @@ char *alloc_word(const char **s, char c)
 	return (arr);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
-	char **arr;
-	int words;
-	int i;
+	char	**arr;
+	int		words;
+	int		i;
 
 	arr = (char **)malloc(sizeof(char *) * ((words = count_words(s, c)) + 1));
 	if (!arr)
-	return (NULL);
+		return (NULL);
 	i = 0;
 	while (i < words)
 	{

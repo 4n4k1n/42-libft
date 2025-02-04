@@ -6,13 +6,15 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 11:50:58 by apregitz          #+#    #+#             */
-/*   Updated: 2025/01/05 13:45:37 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/04 16:36:23 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+#include <stdio.h>
+
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
 	if (n == 0)
@@ -25,9 +27,6 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 // #include <stdio.h>
 // int main(void)
 // {
-// 	char str1[5] = "tesT";
-// 	char str2[5] = "test";
-
-// 	printf("%d", ft_strncmp(str1, str2, 4));
+// 	printf("%d\n", ft_strncmp("testtest", "tesZtest", 11));
 // 	return (0);
 // }
