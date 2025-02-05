@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 20:32:04 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/04 20:37:44 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:43:05 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 // checks what memory block comes first to move the memmory save
 // returns dest
 
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

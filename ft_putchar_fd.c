@@ -6,13 +6,13 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 19:22:30 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/04 20:41:43 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:43:32 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // print one character to a given output
 
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

@@ -6,13 +6,13 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 20:12:15 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/04 20:14:41 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:41:14 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // allocate a array and set every byte to 0
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_calloc(size_t count, size_t size)
 {

@@ -6,11 +6,13 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 00:43:40 by apregitz          #+#    #+#             */
-/*   Updated: 2025/02/05 14:29:24 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:45:27 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // calculates the lenght of a sting and returns it
+
+#include "libft.h"
 
 int	ft_strlen(char *str)
 {

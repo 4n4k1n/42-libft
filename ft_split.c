@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 14:25:03 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/05 15:32:11 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:43:58 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,7 @@
 // return NULL if the allocation fails
 // return the 2d array with the words if the sting was splitted succesfully
 
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
 static const char	*get_word_index(const char *s, char c)
 {

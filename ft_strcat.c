@@ -6,11 +6,13 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 12:49:01 by apregitz          #+#    #+#             */
-/*   Updated: 2025/02/04 20:51:41 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:44:22 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // append source at thwe end of dest
+
+#include "libft.h"
 
 char	*ft_strcat(char *dest, char *src)
 {

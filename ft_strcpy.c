@@ -6,11 +6,13 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 00:37:10 by apregitz          #+#    #+#             */
-/*   Updated: 2025/02/05 13:56:38 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:44:40 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // copy the string form source to dest and return dest
+
+#include "libft.h"
 
 char	*ft_strcpy(char *dest, char *src)
 {

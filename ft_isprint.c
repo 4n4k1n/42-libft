@@ -6,11 +6,13 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/05 15:01:18 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/04 20:20:10 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:42:11 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // return 1 if c is a printable character. else return 0
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

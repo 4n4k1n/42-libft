@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 15:00:31 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/05 15:01:28 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:46:16 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 // returns the possiton of the character if found
 // returns NULL if not found
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

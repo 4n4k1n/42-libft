@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 15:06:24 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/05 15:10:27 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:46:27 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,7 @@
 // or if allocation fails
 // if succes it returns the allocated array
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

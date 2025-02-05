@@ -6,14 +6,14 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 14:24:32 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/05 14:28:04 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:45:20 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // copy source to dest to a given size
 // returns the sousrce lenght
 
-#include <stdio.h>
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

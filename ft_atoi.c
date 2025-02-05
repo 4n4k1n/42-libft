@@ -6,13 +6,15 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 20:12:33 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/04 20:12:35 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:41:00 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // converts a number from a given string into a int number
 // handles integer overflow
 // use long int for edge case
+
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {

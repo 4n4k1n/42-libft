@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 17:48:08 by apregitz          #+#    #+#             */
-/*   Updated: 2025/02/05 15:04:20 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:46:22 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 // return str if to_find is a terminator
 // if not found it returns NULL
 
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strstr(char *str, char *to_find)
 {

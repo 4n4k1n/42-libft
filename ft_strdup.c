@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/04 20:53:22 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/05 14:01:07 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:44:46 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 // return NULL if allocation fails or the given string is empty
 // esle return the allocated string
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *string)
 {

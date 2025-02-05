@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 20:28:58 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/04 20:31:43 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:42:58 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 // using unsinged char to step through every single byte
 // return NULL if dest or soursce is empty
 
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {

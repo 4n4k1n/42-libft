@@ -6,13 +6,15 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 21:32:50 by apregitz          #+#    #+#             */
-/*   Updated: 2025/02/05 13:54:13 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:44:34 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // compare two stings with each other
 // untill the strings end or they are not the same anymore
 // return the ascii difference
+
+#include "libft.h"
 
 int	ft_strcmp(char *s1, char *s2)
 {

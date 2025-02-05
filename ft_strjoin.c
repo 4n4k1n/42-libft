@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 14:08:12 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/05 14:10:04 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:45:06 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 // return NULL if the allocation fails
 // return the allocated array if everything was succesfully
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

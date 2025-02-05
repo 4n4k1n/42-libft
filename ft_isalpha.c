@@ -6,11 +6,13 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/05 13:31:34 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/04 20:17:05 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:41:38 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // return 1 if c is a alpabetical letter. else return 0
+
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {

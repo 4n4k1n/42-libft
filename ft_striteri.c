@@ -6,12 +6,14 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 18:59:37 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/05 14:04:46 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:44:56 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // function does a simple pointert function operation
 // return nothing if the string is empty or there is not function 
+
+#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

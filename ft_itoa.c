@@ -6,14 +6,14 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 18:22:19 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/05 15:30:18 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:42:21 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // converts a given int number into a allocated string
 // return NULL if allocation fails
 
-#include <stdlib.h>
+#include "libft.h"
 
 static int	get_len(int n, long int	*temp)
 {

@@ -6,13 +6,15 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 03:00:11 by apregitz          #+#    #+#             */
-/*   Updated: 2025/02/05 14:23:05 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:45:13 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // appends source at the end of dest
 // only copy to the amount of bytes that are given as parameter
 //  iif the size is to small the function returns the lenght that it needs
+
+#include "libft.h"
 
 unsigned int	ft_strlcat(char *dest, const char *src, unsigned int size)
 {

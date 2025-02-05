@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 20:26:09 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/04 20:28:44 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:42:52 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 // if the arrays are not the same return the ascii difference
 // if they are the same the function reurns 0
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

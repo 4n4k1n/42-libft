@@ -6,12 +6,14 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 13:50:10 by apregitz          #+#    #+#             */
-/*   Updated: 2025/02/05 14:42:35 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:45:56 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // appends source to the end of dest up to the given len
 // returns dest
+
+#include "libft.h"
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {

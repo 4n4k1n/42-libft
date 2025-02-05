@@ -6,13 +6,13 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 20:12:42 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/04 20:13:20 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:41:05 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // set the value of every byte in arr to 0 up to n position
 
-#include <stdio.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 20:25:45 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/04 20:25:47 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:42:40 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 // else return NULL
 // uses unsinged char to step through every single byte
 
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

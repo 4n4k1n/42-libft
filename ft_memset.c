@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 20:38:01 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/04 20:40:42 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:43:13 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 // uses unsinged char to step through every single byte
 // returns the memmory block
 
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {

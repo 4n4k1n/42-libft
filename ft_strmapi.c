@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 18:36:11 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/05 14:35:23 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:45:39 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 // returns NULL if the str or the func ponter is NULL and when allocation fails
 // returns the allocated array if everything was succesfully
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

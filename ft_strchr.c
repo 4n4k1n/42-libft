@@ -14,7 +14,7 @@
 // if found return the address of the possition
 // if not found or the string is empty return NULL
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

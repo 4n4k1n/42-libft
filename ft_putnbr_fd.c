@@ -6,13 +6,13 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 19:51:32 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/04 20:45:25 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:43:44 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // print a number to a given output 
 
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

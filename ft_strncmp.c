@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 11:50:58 by apregitz          #+#    #+#             */
-/*   Updated: 2025/02/05 14:53:41 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:46:02 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 // returns the ascii difference
 // return 0 if n is 0
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
