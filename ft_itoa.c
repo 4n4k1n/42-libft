@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 18:22:19 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/04 20:21:30 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:30:18 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include <stdlib.h>
 
-int	get_len(int n, long int	*temp)
+static int	get_len(int n, long int	*temp)
 {
 	int	len;
 
@@ -33,7 +33,7 @@ int	get_len(int n, long int	*temp)
 	return (len);
 }
 
-void	fill_arr(char **arr, int len, long int temp)
+static void	fill_arr(char **arr, int len, long int temp)
 {
 	(*arr)[len] = '\0';
 	while (temp > 0)

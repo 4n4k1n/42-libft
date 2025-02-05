@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 14:25:03 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/04 20:49:50 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:32:11 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-const char	*get_word_index(const char *s, char c)
+static const char	*get_word_index(const char *s, char c)
 {
 	while (*s == c)
 		s++;
 	return (s);
 }
 
-int	count_words(char const *s, char c)
+static int	tcount_words(char const *s, char c)
 {
 	int	count;
 	int	active;
@@ -46,7 +46,7 @@ int	count_words(char const *s, char c)
 	return (count);
 }
 
-char	*alloc_word(const char **s, char c)
+static char	*alloc_word(const char **s, char c)
 {
 	int		i;
 	char	*arr;
