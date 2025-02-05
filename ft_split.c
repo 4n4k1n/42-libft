@@ -6,9 +6,14 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 14:25:03 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/04 16:31:13 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/04 20:49:50 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// splits a string into single words splitted by c
+// the splitted words are terminated with '\0' and the 2d arrwith NULL
+// return NULL if the allocation fails
+// return the 2d array with the words if the sting was splitted succesfully
 
 #include <stdlib.h>
 #include <stdio.h>

@@ -6,9 +6,12 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 18:22:19 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/04 18:23:26 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/04 20:21:30 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// converts a given int number into a allocated string
+// return NULL if allocation fails
 
 #include <stdlib.h>
 

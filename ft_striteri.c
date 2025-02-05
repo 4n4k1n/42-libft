@@ -6,11 +6,12 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 18:59:37 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/04 19:40:18 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 14:04:46 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+// function does a simple pointert function operation
+// return nothing if the string is empty or there is not function 
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
@@ -36,7 +37,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 
 // 	ft_striteri(arr, &f);
 // 	if (!arr)
-// 		printf("cant allocate!!!\n");
+// 		printf("error!!!\n");
 // 	else
 // 		printf("%s\n", arr);
 // 	return (0);

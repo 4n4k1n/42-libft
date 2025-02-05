@@ -1,14 +1,20 @@
 /* ************************************************************************** */
-/*																			*/
-/*														:::	  ::::::::   */
-/*   ft_substr.c										:+:	  :+:	:+:   */
-/*													+:+ +:+		 +:+	 */
-/*   By: anakin <anakin@student.42.fr>			  +#+  +:+	   +#+		*/
-/*												+#+#+#+#+#+   +#+		   */
-/*   Created: 2025/02/03 16:26:58 by anakin			#+#	#+#			 */
-/*   Updated: 2025/02/04 16:36:51 by anakin		   ###   ########.fr	   */
-/*																			*/
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/05 15:06:24 by anakin            #+#    #+#             */
+/*   Updated: 2025/02/05 15:10:27 by anakin           ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
+
+// allocated a arr of the max size of len
+// fill the arr with values from s at the possition start
+// return NULL if start is bigger then the str len or len is 0
+// or if allocation fails
+// if succes it returns the allocated array
 
 #include <stdio.h>
 #include <stdlib.h>

@@ -1,14 +1,18 @@
 /* ************************************************************************** */
-/*																			*/
-/*														:::	  ::::::::   */
-/*   ft_strrchr.c									   :+:	  :+:	:+:   */
-/*													+:+ +:+		 +:+	 */
-/*   By: anakin <anakin@student.42.fr>			  +#+  +:+	   +#+		*/
-/*												+#+#+#+#+#+   +#+		   */
-/*   Created: 2025/01/24 15:03:25 by anakin			#+#	#+#			 */
-/*   Updated: 2025/01/24 15:34:50 by anakin		   ###   ########.fr	   */
-/*																			*/
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/05 15:00:31 by anakin            #+#    #+#             */
+/*   Updated: 2025/02/05 15:01:28 by anakin           ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
+
+// search for the last occurence of c in the string s
+// returns the possiton of the character if found
+// returns NULL if not found
 
 #include <stdlib.h>
 

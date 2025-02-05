@@ -1,16 +1,20 @@
 /* ************************************************************************** */
-/*																			*/
-/*														:::	  ::::::::   */
-/*   ft_strjoin.c									   :+:	  :+:	:+:   */
-/*													+:+ +:+		 +:+	 */
-/*   By: anakin <anakin@student.42.fr>			  +#+  +:+	   +#+		*/
-/*												+#+#+#+#+#+   +#+		   */
-/*   Created: 2025/02/03 17:20:32 by anakin			#+#	#+#			 */
-/*   Updated: 2025/02/03 19:33:01 by anakin		   ###   ########.fr	   */
-/*																			*/
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/05 14:08:12 by anakin            #+#    #+#             */
+/*   Updated: 2025/02/05 14:10:04 by anakin           ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// acllocate a string with the lenght of the two given strings
+// and copy the first string into it and appends the second at the end
+// return NULL if the allocation fails
+// return the allocated array if everything was succesfully
+
 #include <stdlib.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)
@@ -41,6 +45,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (arr);
 }
 
+// #include <stdio.h>
 // int main(void)
 // {
 //	 char *str = ft_strjoin("This is str 1. ", "sdasdas");

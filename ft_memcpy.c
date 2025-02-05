@@ -1,14 +1,18 @@
 /* ************************************************************************** */
-/*																			*/
-/*														:::	  ::::::::   */
-/*   ft_memcpy.c										:+:	  :+:	:+:   */
-/*													+:+ +:+		 +:+	 */
-/*   By: anakin <anakin@student.42.fr>			  +#+  +:+	   +#+		*/
-/*												+#+#+#+#+#+   +#+		   */
-/*   Created: 2025/01/24 11:37:18 by anakin			#+#	#+#			 */
-/*   Updated: 2025/01/24 12:19:04 by anakin		   ###   ########.fr	   */
-/*																			*/
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/04 20:28:58 by anakin            #+#    #+#             */
+/*   Updated: 2025/02/04 20:31:43 by anakin           ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
+
+// copy the values of every single byte form source to dest
+// using unsinged char to step through every single byte
+// return NULL if dest or soursce is empty
 
 #include <stdio.h>
 

@@ -3,12 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: apregitz <apregitz@student.42heilbronn.    +#+  +:+       +#+        */
+/*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 17:48:08 by apregitz          #+#    #+#             */
-/*   Updated: 2024/11/26 16:08:31 by apregitz         ###   ########.fr       */
+/*   Updated: 2025/02/05 15:04:20 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// search for to_find in str
+// if found it returns the possition 
+// return str if to_find is a terminator
+// if not found it returns NULL
+
+#include <stdio.h>
 
 char	*ft_strstr(char *str, char *to_find)
 {
@@ -30,7 +37,7 @@ char	*ft_strstr(char *str, char *to_find)
 			return (str + i_str);
 		i_str++;
 	}
-	return (0);
+	return (NULL);
 }
 
 /* #include <stdio.h>

@@ -6,9 +6,11 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 19:51:32 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/04 20:03:58 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/04 20:45:25 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// print a number to a given output 
 
 #include <unistd.h>
 
@@ -35,7 +37,7 @@ void	ft_putnbr_fd(int n, int fd)
 
 // int main(void)
 // {
-// 	ft_putnbr_fd(2147483647, 1);
+// 	ft_putnbr_fd(-2147483648, 1);
 // 	write(1, "\n", 1);
 // 	return (0);
 // }

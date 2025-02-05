@@ -6,9 +6,11 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/05 14:34:34 by anakin            #+#    #+#             */
-/*   Updated: 2025/01/05 14:51:19 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/04 20:19:28 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// return 1 if c is a digit. else return 0
 
 int	ft_isdigit(int c)
 {

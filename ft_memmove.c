@@ -1,14 +1,18 @@
 /* ************************************************************************** */
-/*																			*/
-/*														:::	  ::::::::   */
-/*   ft_memmove.c									   :+:	  :+:	:+:   */
-/*													+:+ +:+		 +:+	 */
-/*   By: anakin <anakin@student.42.fr>			  +#+  +:+	   +#+		*/
-/*												+#+#+#+#+#+   +#+		   */
-/*   Created: 2025/01/24 12:53:42 by anakin			#+#	#+#			 */
-/*   Updated: 2025/01/24 14:07:23 by anakin		   ###   ########.fr	   */
-/*																			*/
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/04 20:32:04 by anakin            #+#    #+#             */
+/*   Updated: 2025/02/04 20:37:44 by anakin           ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
+
+// moves the memmory from source to dest 
+// checks what memory block comes first to move the memmory save
+// returns dest
 
 #include <stdio.h>
 

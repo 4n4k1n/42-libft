@@ -6,9 +6,13 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/05 15:06:14 by anakin            #+#    #+#             */
-/*   Updated: 2025/01/05 16:29:46 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 15:12:16 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// takes a character c
+// if c si lower case it returns upper case
+// else it returns c
 
 int	ft_toupper(int c)
 {

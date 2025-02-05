@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: apregitz <apregitz@student.42heilbronn.    +#+  +:+       +#+        */
+/*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 12:49:01 by apregitz          #+#    #+#             */
-/*   Updated: 2024/11/26 16:07:55 by apregitz         ###   ########.fr       */
+/*   Updated: 2025/02/04 20:51:41 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// append source at thwe end of dest
 
 char	*ft_strcat(char *dest, char *src)
 {

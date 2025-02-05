@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: apregitz <apregitz@student.42heilbronn.    +#+  +:+       +#+        */
+/*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 00:43:40 by apregitz          #+#    #+#             */
-/*   Updated: 2024/11/16 15:20:14 by apregitz         ###   ########.fr       */
+/*   Updated: 2025/02/05 14:29:24 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// calculates the lenght of a sting and returns it
 
 int	ft_strlen(char *str)
 {
@@ -25,6 +25,7 @@ int	ft_strlen(char *str)
 	return (counter);
 }
 
+// #include <stdio.h>
 /* int	main(void)
 {
 	int		len;

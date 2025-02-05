@@ -6,9 +6,12 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/05 14:55:48 by anakin            #+#    #+#             */
-/*   Updated: 2025/01/05 15:23:06 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 13:43:07 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// return 1 if c is a value in the ascii table (range 0 up to 127)
+// esle return 0
 
 int	ft_isascii(int c)
 {

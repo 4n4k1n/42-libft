@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: apregitz <apregitz@student.42heilbronn.    +#+  +:+       +#+        */
+/*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 21:32:50 by apregitz          #+#    #+#             */
-/*   Updated: 2024/11/20 23:04:04 by apregitz         ###   ########.fr       */
+/*   Updated: 2025/02/05 13:54:13 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// compare two stings with each other
+// untill the strings end or they are not the same anymore
+// return the ascii difference
 
 int	ft_strcmp(char *s1, char *s2)
 {

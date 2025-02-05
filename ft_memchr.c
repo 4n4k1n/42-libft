@@ -1,14 +1,19 @@
 /* ************************************************************************** */
-/*																			*/
-/*														:::	  ::::::::   */
-/*   ft_memchr.c										:+:	  :+:	:+:   */
-/*													+:+ +:+		 +:+	 */
-/*   By: anakin <anakin@student.42.fr>			  +#+  +:+	   +#+		*/
-/*												+#+#+#+#+#+   +#+		   */
-/*   Created: 2025/01/24 15:57:34 by anakin			#+#	#+#			 */
-/*   Updated: 2025/01/29 14:59:19 by anakin		   ###   ########.fr	   */
-/*																			*/
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/04 20:25:45 by anakin            #+#    #+#             */
+/*   Updated: 2025/02/04 20:25:47 by anakin           ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
+
+// search in the array s for c
+// if found return the address of the found character
+// else return NULL
+// uses unsinged char to step through every single byte
 
 #include <stdio.h>
 

@@ -6,9 +6,13 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 11:50:58 by apregitz          #+#    #+#             */
-/*   Updated: 2025/02/04 16:36:23 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 14:53:41 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// compare two stings up to a given piossition n
+// returns the ascii difference
+// return 0 if n is 0
 
 #include <stdio.h>
 

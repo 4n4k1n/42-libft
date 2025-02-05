@@ -6,9 +6,14 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 18:36:11 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/04 19:41:00 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/05 14:35:23 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// does operations with a function pointer and a string
+// allocates a new array and fills it with the changed from the func pointer
+// returns NULL if the str or the func ponter is NULL and when allocation fails
+// returns the allocated array if everything was succesfully
 
 #include <stdlib.h>
 

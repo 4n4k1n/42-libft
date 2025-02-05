@@ -1,14 +1,18 @@
 /* ************************************************************************** */
-/*																			*/
-/*														:::	  ::::::::   */
-/*   ft_memset.c										:+:	  :+:	:+:   */
-/*													+:+ +:+		 +:+	 */
-/*   By: anakin <anakin@student.42.fr>			  +#+  +:+	   +#+		*/
-/*												+#+#+#+#+#+   +#+		   */
-/*   Created: 2025/01/07 16:21:30 by anakin			#+#	#+#			 */
-/*   Updated: 2025/01/24 14:48:47 by anakin		   ###   ########.fr	   */
-/*																			*/
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/04 20:38:01 by anakin            #+#    #+#             */
+/*   Updated: 2025/02/04 20:40:42 by anakin           ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
+
+// set every byte to c up to the given lenght
+// uses unsinged char to step through every single byte
+// returns the memmory block
 
 #include <stdio.h>
 

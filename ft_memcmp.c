@@ -1,14 +1,19 @@
 /* ************************************************************************** */
-/*																			*/
-/*														:::	  ::::::::   */
-/*   ft_memcmp.c										:+:	  :+:	:+:   */
-/*													+:+ +:+		 +:+	 */
-/*   By: anakin <anakin@student.42.fr>			  +#+  +:+	   +#+		*/
-/*												+#+#+#+#+#+   +#+		   */
-/*   Created: 2025/01/29 15:08:57 by anakin			#+#	#+#			 */
-/*   Updated: 2025/01/29 15:24:38 by anakin		   ###   ########.fr	   */
-/*																			*/
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/04 20:26:09 by anakin            #+#    #+#             */
+/*   Updated: 2025/02/04 20:28:44 by anakin           ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
+
+// compare every single byte form arr 1 with arr 2
+// using unsinged char to step through every single byte
+// if the arrays are not the same return the ascii difference
+// if they are the same the function reurns 0
 
 #include <stdio.h>
 

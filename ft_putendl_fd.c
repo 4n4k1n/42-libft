@@ -6,9 +6,11 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 19:46:07 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/04 19:50:11 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/04 20:42:19 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// print a string followed by a newline to a given output
 
 #include <unistd.h>
 

@@ -10,6 +10,10 @@
 /*																			*/
 /* ************************************************************************** */
 
+// search for the first character c in the string s
+// if found return the address of the possition
+// if not found or the string is empty return NULL
+
 #include <stdlib.h>
 
 char	*ft_strchr(const char *s, int c)

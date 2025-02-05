@@ -6,9 +6,11 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/05 14:41:25 by anakin            #+#    #+#             */
-/*   Updated: 2025/01/05 14:51:35 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/04 20:16:02 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// return 1 if c is a alphabetical letter or a digit. else return 0
 
 int	ft_isalnum(int c)
 {
