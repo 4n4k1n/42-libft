@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 14:25:03 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/05 15:43:58 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/14 17:17:01 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static const char	*get_word_index(const char *s, char c)
 	return (s);
 }
 
-static int	tcount_words(char const *s, char c)
+static int	count_words(char const *s, char c)
 {
 	int	count;
 	int	active;
