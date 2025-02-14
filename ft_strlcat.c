@@ -6,39 +6,39 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 03:00:11 by apregitz          #+#    #+#             */
-/*   Updated: 2025/02/05 15:45:13 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/14 16:32:07 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// appends source at the end of dest
+// appends source at the end of dst
 // only copy to the amount of bytes that are given as parameter
-//  iif the size is to small the function returns the lenght that it needs
+//  iif the dstsize is to small the function returns the lenght that it needs
 
 #include "libft.h"
 
-unsigned int	ft_strlcat(char *dest, const char *src, unsigned int size)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	unsigned int	c_dest;
-	unsigned int	c_src;
-	unsigned int	i;
+	size_t	c_dst;
+	size_t	c_src;
+	size_t	i;
 
 	c_src = 0;
 	i = 0;
-	c_dest = 0;
-	while (c_dest < size && dest[c_dest])
-		c_dest++;
+	c_dst = 0;
+	while (c_dst < dstsize && dst[c_dst])
+		c_dst++;
 	while (src[c_src])
 		c_src++;
-	if (size <= c_dest)
-		return (size + c_src);
-	while (src[i] && (c_dest + i) < size - 1)
+	if (dstsize <= c_dst)
+		return (dstsize + c_src);
+	while (src[i] && (c_dst + i) < dstsize - 1)
 	{
-		dest[c_dest + i] = src[i];
+		dst[c_dst + i] = src[i];
 		i++;
 	}
-	if ((c_dest + i) < size)
-		dest[c_dest + i] = '\0';
-	return (c_dest + c_src);
+	if ((c_dst + i) < dstsize)
+		dst[c_dst + i] = '\0';
+	return (c_dst + c_src);
 }
 
 // #include <stdio.h>
@@ -47,7 +47,7 @@ unsigned int	ft_strlcat(char *dest, const char *src, unsigned int size)
 // {
 //     char str1[5] = "test";
 //     char str2[8] = "hi ";
-//     unsigned int num;
+//     size_t num;
 //     num = ft_strlcat(str2, str1, 8);
 // 	// num = strlcat(str2, str1, 5);
 //     printf("%s\n%d\n", str2, num);

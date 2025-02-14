@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 00:43:40 by apregitz          #+#    #+#             */
-/*   Updated: 2025/02/05 15:45:27 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/14 16:28:32 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 #include "libft.h"
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(const char *s)
 {
-	int	counter;
+	size_t	counter;
 
 	counter = 0;
-	while (*str)
+	while (*s)
 	{
 		counter++;
-		str++;
+		s++;
 	}
 	return (counter);
 }
