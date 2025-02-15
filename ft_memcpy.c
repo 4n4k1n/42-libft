@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 20:28:58 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/05 15:42:58 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/15 14:43:33 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t	i;
 
-	if (!dst || !src)
+	if (!dst && !src)
 		return (NULL);
 	i = 0;
 	while (i < n)

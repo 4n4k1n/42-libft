@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 20:32:04 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/05 15:43:05 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/15 14:43:58 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	size_t	i;
 
+	if (!dst && !src)
+		return (NULL);
 	if ((unsigned char *)dst < (unsigned char *)src)
 	{
 		i = 0;
