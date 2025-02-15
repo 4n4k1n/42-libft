@@ -12,7 +12,7 @@ Libft is a project that requires us to re-create some standard C library functio
 ### Installation
 1. Clone the repository:
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/4n4k1n/42-libft.git libft
 ```
 
 2. Compile the library:
@@ -92,10 +92,6 @@ gcc your_file.c -L. -lft
 | ft_lstiter | Applies a function to each element of a list |
 | ft_lstmap | Applies a function to each element of a list |
 
-## 📈 Testing
-```bash
-make test  # If you have test files
-```
 
 ## 🧹 Cleaning Up
 ```bash
