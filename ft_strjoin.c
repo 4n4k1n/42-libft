@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 14:08:12 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/05 15:45:06 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/15 12:04:40 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,16 @@
 
 #include "libft.h"
 
+static int	ft_get_len(const char *str)
+{
+	int	len;
+
+	len = 0;
+	while (str[len])
+		len++;
+	return (len);
+}
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	int		len_s1;
@@ -24,22 +34,19 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*arr;
 	int		i;
 
-	len_s1 = 0;
-	while (s1[len_s1])
-		len_s1++;
-	len_s2 = 0;
-	while (s2[len_s2])
-		len_s2++;
-	arr = (char *)malloc(sizeof(char) * (len_s1 + len_s2 + 2));
+	len_s1 = ft_get_len(s1);
+	len_s2 = ft_get_len(s2);
+	arr = (char *)malloc(sizeof(char) * (len_s1 + len_s2 + 1));
 	if (!arr)
 		return (NULL);
-	i = -1;
-	while (++i < len_s1 + len_s2)
+	i = 0;
+	while (i < len_s1 + len_s2)
 	{
 		if (i < len_s1)
 			arr[i] = s1[i];
 		else
 			arr[i] = s2[i - len_s1];
+		i++;
 	}
 	arr[i] = '\0';
 	return (arr);
