@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 15:06:24 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/05 15:46:27 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/15 14:58:22 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,31 +18,43 @@
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+static char	*ft_create_substr(size_t size)
 {
-	size_t	real_len;
 	char	*arr;
 
-	real_len = 0;
-	while (s[real_len])
-		real_len++;
-	if (start > real_len || len == 0)
-		return (NULL);
-	if ((real_len - start - 1) > len)
-		real_len = len;
-	else
-		real_len -= start - 1;
-	arr = (char *)malloc(sizeof(char) * (real_len + 1));
+	arr = malloc(size + 1);
 	if (!arr)
 		return (NULL);
-	len = 0;
-	while (len < real_len)
-	{
-		arr[len] = s[start + len];
-		len++;
-	}
-	arr[len] = '\0';
+	arr[size] = '\0';
 	return (arr);
+}
+
+char	*ft_substr(char const *s, unsigned int start, size_t len)
+{
+	size_t	s_len;
+	char	*substr;
+	size_t	i;
+
+	if (!s)
+		return (NULL);
+	s_len = 0;
+	while (s[s_len])
+		s_len++;
+	if (start >= s_len || len == 0)
+		return (ft_create_substr(0));
+	if (s_len - start < len)
+		len = s_len - start;
+	substr = malloc(len + 1);
+	if (!substr)
+		return (NULL);
+	i = 0;
+	while (i < len)
+	{
+		substr[i] = s[start + i];
+		i++;
+	}
+	substr[i] = '\0';
+	return (substr);
 }
 
 // int main(void)
