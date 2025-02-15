@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 14:44:27 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/05 16:04:12 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/15 15:16:16 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 	size_t	i;
 	size_t	j;
 
-	if (!s1 || !s2)
+	if (!s1 && !s2)
 		return (NULL);
 	if (!s2[0])
 		return ((char *)s1);
