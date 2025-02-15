@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 20:12:15 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/05 15:41:14 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/15 12:19:41 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ void	*ft_calloc(size_t count, size_t size)
 	size_t	i;
 	void	*arr;
 
-	if (!size || !count)
-		return (NULL);
 	arr = malloc(count * size);
+	if (!arr)
+		return (NULL);
 	i = 0;
 	while (i < (size * count))
 	{
