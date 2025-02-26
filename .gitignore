@@ -1,3 +1,4 @@
 .vscode
 libft.a
 *.o
+a.out
