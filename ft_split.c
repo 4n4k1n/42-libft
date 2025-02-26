@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 14:25:03 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/14 17:17:01 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/26 22:36:43 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,19 @@
 // return the 2d array with the words if the sting was splitted succesfully
 
 #include "libft.h"
+
+static void	ft_free_split(char **arr, int count)
+{
+	int	i;
+
+	i = 0;
+	while (i < count)
+	{
+		free(arr[i]);
+		i++;
+	}
+	free(arr);
+}
 
 static const char	*get_word_index(const char *s, char c)
 {
@@ -73,6 +86,8 @@ char	**ft_split(char const *s, char c)
 	int		words;
 	int		i;
 
+	if (!s)
+		return (NULL);
 	arr = (char **)malloc(sizeof(char *) * ((words = count_words(s, c)) + 1));
 	if (!arr)
 		return (NULL);
@@ -83,9 +98,7 @@ char	**ft_split(char const *s, char c)
 		arr[i] = alloc_word(&s, c);
 		if (!arr[i])
 		{
-			while (i >= 0)
-				free(arr[i--]);
-			free(arr);
+			ft_free_split(arr, i);
 			return (NULL);
 		}
 		i++;
@@ -94,11 +107,15 @@ char	**ft_split(char const *s, char c)
 	return (arr);
 }
 
+// #include <stdio.h>
 // int main(void)
 // {
-//     char **words = ft_split("hello this is a test for split. "
-// 	"i hope this shit works. hate this function.", ' ');
-
+//     char **words = ft_split(NULL, ' ');
+// 	if (!words)
+// 	{
+// 		printf("can not allocate!!!\n");
+// 		return (1);
+// 	}
 //     for (int i = 0; words[i]; i++)
 //     {
 //         printf("%s\n", words[i]);
