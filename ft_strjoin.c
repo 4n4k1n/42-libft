@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 14:08:12 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/15 12:04:40 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/26 20:58:11 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*arr;
 	int		i;
 
+	if (!s1 || ! s2)
+		return (NULL);
 	len_s1 = ft_get_len(s1);
 	len_s2 = ft_get_len(s2);
 	arr = (char *)malloc(sizeof(char) * (len_s1 + len_s2 + 1));
@@ -55,13 +57,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 // #include <stdio.h>
 // int main(void)
 // {
-//	 char *str = ft_strjoin("This is str 1. ", "sdasdas");
-//	 if (!str)
-//		 printf("can not allocate!!!\n");
-//	 else
-//	 {
-//		 printf("%s\n", str);
-//		 free(str);
-//	 }
-//	 return (0);
+// 	 char *str = ft_strjoin("This is str 1. ", NULL);
+// 	 if (!str)
+// 		 printf("can not allocate!!!\n");
+// 	 else
+// 	 {
+// 		 printf("%s\n", str);
+// 		 free(str);
+// 	 }
+// 	 return (0);
 // }
