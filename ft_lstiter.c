@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 15:38:22 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/12 15:48:58 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/26 21:03:17 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
+	if (!f)
+		return ;
 	while (lst)
 	{
 		f(lst->content);
