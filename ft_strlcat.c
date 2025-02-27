@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 03:00:11 by apregitz          #+#    #+#             */
-/*   Updated: 2025/02/14 16:32:07 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/27 14:56:06 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	c_src;
 	size_t	i;
 
+	if (!dst || dstsize == 0)
 	c_src = 0;
 	i = 0;
 	c_dst = 0;
