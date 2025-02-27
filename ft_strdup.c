@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/04 20:53:22 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/15 15:14:18 by anakin           ###   ########.fr       */
+/*   Updated: 2025/02/27 14:54:22 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ char	*ft_strdup(const char *string)
 	int		i;
 	char	*new_arr;
 
+	if (!string)
+		return (NULL);
 	len = 0;
 	while (string[len])
 		len++;
