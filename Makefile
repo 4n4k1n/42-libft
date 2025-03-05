@@ -17,8 +17,11 @@ BONUS_SRCS = src/ft_lstnew.c src/ft_lstadd_front.c src/ft_lstsize.c src/ft_lstla
     src/ft_lstadd_back.c src/ft_lstdelone.c src/ft_lstclear.c src/ft_lstiter.c \
     src/ft_lstmap.c
 
+EXTRA_SRCS = src/ft_strrev.c src/ft_strsmsh.c
+
 OBJS = $(SRCS:.c=.o)
 BONUS_OBJS = $(BONUS_SRCS:.c=.o)
+EXTRA_OBJS = $(EXTRA_SRCS:.c=.o)
 
 all: $(NAME)
 
@@ -28,15 +31,18 @@ $(NAME): $(OBJS)
 bonus: $(OBJS) $(BONUS_OBJS)
 	$(AR) $(NAME) $(OBJS) $(BONUS_OBJS)
 
+extra: $(OBJS) $(BONUS_OBJS) $(EXTRA_OBJS)
+	$(AR) $(NAME) $(OBJS) $(BONUS_OBJS) $(EXTRA_OBJS)
+
 %.o: %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	$(RM) $(OBJS) $(BONUS_OBJS)
+	$(RM) $(OBJS) $(BONUS_OBJS) $(EXTRA_OBJS)
 
 fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
 
-.PHONY: all bonus clean fclean re
+.PHONY: all bonus extra clean fclean re
