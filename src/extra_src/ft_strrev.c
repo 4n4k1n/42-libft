@@ -6,11 +6,11 @@
 /*   By: apregitz <apregitz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 11:32:46 by apregitz          #+#    #+#             */
-/*   Updated: 2025/03/05 11:50:16 by apregitz         ###   ########.fr       */
+/*   Updated: 2025/03/09 17:20:40 by apregitz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 char	*ft_strrev(char *string)
 {

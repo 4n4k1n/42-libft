@@ -6,13 +6,14 @@
 /*   By: apregitz <apregitz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 12:07:28 by apregitz          #+#    #+#             */
-/*   Updated: 2025/03/05 12:11:41 by apregitz         ###   ########.fr       */
+/*   Updated: 2025/03/09 17:28:26 by apregitz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
-static void	ft_cpy_strs(const char *const words[], char *str, size_t count)
+static void	ft_cpy_strs(const char **words, char seperator, char *str,
+		size_t count)
 {
 	size_t	i;
 	size_t	j;
@@ -28,13 +29,13 @@ static void	ft_cpy_strs(const char *const words[], char *str, size_t count)
 			str[len++] = words[i][j];
 			j++;
 		}
-		str[len++] = ' ';
+		str[len++] = seperator;
 		i++;
 	}
 	str[--len] = '\0';
 }
 
-char	*smash(const char *const words[], size_t count)
+char	*smash(const char **words, char seperator, size_t count)
 {
 	int		len;
 	size_t	i;
@@ -47,7 +48,7 @@ char	*smash(const char *const words[], size_t count)
 	str = malloc(len);
 	if (!str)
 		return (NULL);
-	ft_cpy_strs(words, str, count);
+	ft_cpy_strs(words, seperator, str, count);
 	return (str);
 }
 
