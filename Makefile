@@ -8,11 +8,11 @@ RM = rm -f
 
 SRC_DIR = src
 OBJ_DIR = obj
-VPATH = $(SRC_DIR)/libft_src:$(SRC_DIR)/printf_src
+VPATH = $(SRC_DIR)/libft_src:$(SRC_DIR)/printf_src:$(SRC_DIR)/extra_src
 
 INCLUDES = -Iinc
 
-LIBFT_SRCS := ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
+LIBFT_SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 	ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
 	ft_strlcpy.c ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c \
 	ft_strrchr.c ft_strncmp.c ft_memchr.c ft_memcmp.c ft_strnstr.c \
@@ -23,10 +23,12 @@ LIBFT_SRCS := ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 	ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c \
 	ft_lstmap.c
 
-PRINTF_SRCS := ft_error.c ft_printf.c ft_putchar.c ft_puthex.c \
+PRINTF_SRCS = ft_error.c ft_printf.c ft_putchar.c ft_puthex.c \
 	ft_putnbr.c ft_putptr.c ft_putstr.c ft_putunbr.c
 
-SRCS := $(LIBFT_SRCS) $(PRINTF_SRCS)
+EXTRA_SRC = ft_strrev.c ft_strsmsh.c
+
+SRCS := $(LIBFT_SRCS) $(PRINTF_SRCS) $(EXTRA_SRC)
 
 OBJS := $(addprefix $(OBJ_DIR)/, $(SRCS:.c=.o))
 
