@@ -33,20 +33,58 @@ OBJS := $(addprefix $(OBJ_DIR)/, $(SRCS:.c=.o))
 all: $(NAME)
 
 $(NAME): $(OBJ_DIR) $(OBJS)
-	$(AR) $(NAME) $(OBJS)
+	@$(AR) $(NAME) $(OBJS)
+	@echo
+	@echo
+	@echo "       >> COMPILED '$(NAME)' SUCCESSFULLY <<"
+	@echo
 
 $(OBJ_DIR)/%.o: %.c 
-	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
+	@$(eval TOTAL := $(words $(SRCS)))
+	@$(eval PROGRESS := $(shell echo $$(($(PROGRESS)+1))))
+	@$(eval PERCENT := $(shell echo $$(($(PROGRESS)*100/$(TOTAL)))))
+	@$(call progress_bar,$(PERCENT))
+	@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
 $(OBJ_DIR):
-	mkdir -p $(OBJ_DIR)
+	@mkdir -p $(OBJ_DIR)
 
 clean:
-	$(RM) -r $(OBJ_DIR)
+	@$(RM) -r $(OBJ_DIR)
+	@echo
+	@echo "Removed '*.o' files from '$(OBJ_DIR)' directory"
+	@echo
 
-fclean: clean
-	$(RM) $(NAME)
+fclean:
+	@$(RM) $(NAME)
+	@$(RM) -r $(OBJ_DIR)
+	@echo
+	@echo "   >> Removed '*.o' files from '$(OBJ_DIR)' directory <<"
+	@echo "           >>Removed $(NAME) from root <<"
+	@echo
 
 re: fclean all
 
-.PHONY: all bonus clean fclean re
+.PHONY: all clean fclean re
+
+
+RED     := $(shell tput setaf 1)
+GREEN   := $(shell tput setaf 2)
+YELLOW  := $(shell tput setaf 3)
+BLUE    := $(shell tput setaf 4)
+MAGENTA := $(shell tput setaf 5)
+CYAN    := $(shell tput setaf 6)
+WHITE   := $(shell tput setaf 7)
+RESET   := $(shell tput sgr0)
+
+define progress_bar
+	@printf "$(CYAN)["; \
+	for i in $(shell seq 1 50); do \
+		if [ $$i -le $$(($(1)*50/100)) ]; then \
+			printf "$(GREEN)█$(RESET)"; \
+		else \
+			printf "$(WHITE)░$(RESET)"; \
+		fi; \
+	done; \
+	printf "$(CYAN)] %3d%%$(RESET)\r" $(1);
+endef
