@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 20:12:33 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/05 15:41:00 by anakin           ###   ########.fr       */
+/*   Updated: 2025/03/09 22:44:47 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 
 int	ft_atoi(const char *nptr)
 {
-	long int	number;
-	int			negativ;
+	unsigned int	number;
+	int				negativ;
 
 	while ((*nptr >= 9 && *nptr <= 13) || *nptr == ' ')
 		nptr++;
@@ -34,22 +34,18 @@ int	ft_atoi(const char *nptr)
 	while (*nptr >= '0' && *nptr <= '9')
 	{
 		number = (number * 10) + ((*nptr - '0') * negativ);
-		if (number > 2147483647)
-			return (2147483647);
-		else if (number < -2147483648)
-			return (-2147483648);
 		nptr++;
 	}
-	return ((int )number);
+	return (number);
 }
 
 // #include <stdio.h>
 // #include <stdlib.h>
 // int main(void)
 // {
-//	 char *str = "   - 214ghasd7483647";
+// 	 char *str = "-2147483699";
 
-//	 printf("atoi	= %d\n", atoi(str));
-//	 printf("ft_atoi = %d\n", ft_atoi(str));
-//	 return (0);
+// 	 printf("atoi	= %d\n", atoi(str));
+// 	 printf("ft_atoi = %d\n", ft_atoi(str));
+// 	 return (0);
 // }
