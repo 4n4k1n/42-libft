@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: apregitz <apregitz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 20:12:15 by anakin            #+#    #+#             */
-/*   Updated: 2025/03/10 10:58:39 by anakin           ###   ########.fr       */
+/*   Updated: 2025/03/10 17:09:58 by apregitz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ void	*ft_calloc(size_t count, size_t size)
 	size_t	i;
 	void	*arr;
 
-	if (!count || !size)
-		return (malloc(0));
 	if (size != 0 && count > ~(size_t)0 / size)
 		return (NULL);
 	arr = malloc(count * size);
