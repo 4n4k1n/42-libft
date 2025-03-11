@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: apregitz <apregitz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 20:12:33 by anakin            #+#    #+#             */
-/*   Updated: 2025/03/09 22:44:47 by anakin           ###   ########.fr       */
+/*   Updated: 2025/03/10 18:08:57 by apregitz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,25 +16,25 @@
 
 #include "libft.h"
 
-int	ft_atoi(const char *nptr)
+int	ft_atoi(const char *str)
 {
 	unsigned int	number;
 	int				negativ;
 
-	while ((*nptr >= 9 && *nptr <= 13) || *nptr == ' ')
-		nptr++;
+	while ((*str >= 9 && *str <= 13) || *str == ' ')
+		str++;
 	negativ = 1;
-	if (*nptr == '-' || *nptr == '+')
+	if (*str == '-' || *str == '+')
 	{
-		if (*nptr == '-')
+		if (*str == '-')
 			negativ = -1;
-		nptr++;
+		str++;
 	}
 	number = 0;
-	while (*nptr >= '0' && *nptr <= '9')
+	while (*str >= '0' && *str <= '9')
 	{
-		number = (number * 10) + ((*nptr - '0') * negativ);
-		nptr++;
+		number = (number * 10) + ((*str - '0') * negativ);
+		str++;
 	}
 	return (number);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: apregitz <apregitz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 14:44:27 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/15 15:16:16 by anakin           ###   ########.fr       */
+/*   Updated: 2025/03/10 17:26:26 by apregitz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,23 +18,24 @@
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *s1, const char *s2, size_t len)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
 	size_t	j;
 
-	if (!s1 && !s2)
+	if (!haystack && !needle)
 		return (NULL);
-	if (!s2[0])
-		return ((char *)s1);
+	if (!needle[0])
+		return ((char *)haystack);
 	i = 0;
-	while (i < len && s1[i])
+	while (i < len && haystack[i])
 	{
 		j = 0;
-		while (i + j < len && s1[i + j] && s2[j] && s1[i + j] == s2[j])
+		while (i + j < len && haystack[i + j] && needle[j] \
+			&& haystack[i + j] == needle[j])
 			j++;
-		if (s2[j] == '\0')
-			return ((char *)(s1 + i));
+		if (needle[j] == '\0')
+			return ((char *)(haystack + i));
 		i++;
 	}
 	return (NULL);
@@ -42,12 +43,12 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 
 // int main(void)
 // {
-//	 char *found;
+//		char *found;
 
-//	 found = ft_strnstr("this is a test!!!", "a", 9);
-//	 if (!found)
-//		 printf("nOT FOUND!!!\n");
-//	 else
-//		 printf("%s\n", found);
-//	 return (0);
+//		found = ft_strnstr("this is a test!!!", "a", 9);
+//		if (!found)
+//			printf("nOT FOUND!!!\n");
+//		else
+//			printf("%s\n", found);
+//		return (0);
 // }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: apregitz <apregitz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 14:24:32 by anakin            #+#    #+#             */
-/*   Updated: 2025/02/05 15:45:20 by anakin           ###   ########.fr       */
+/*   Updated: 2025/03/11 13:03:25 by apregitz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	c_len;
 	size_t	s_len;
@@ -24,10 +24,10 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	s_len = 0;
 	while (src[s_len])
 		s_len++;
-	if (size == 0)
+	if (dstsize == 0)
 		return (s_len);
-	if (size - 1 < s_len)
-		c_len = size - 1;
+	if (dstsize - 1 < s_len)
+		c_len = dstsize - 1;
 	else
 		c_len = s_len;
 	i = 0;
