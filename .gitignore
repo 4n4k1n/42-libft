@@ -1,5 +1,5 @@
 .vscode
 libft.a
 *.o
-a.out
+a.out*
 *.pdf
