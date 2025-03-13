@@ -26,7 +26,7 @@ LIBFT_SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 PRINTF_SRCS = ft_error.c ft_printf.c ft_putchar.c ft_puthex.c \
 	ft_putnbr.c ft_putptr.c ft_putstr.c ft_putunbr.c
 
-EXTRA_SRC = ft_strrev.c ft_strsmsh.c ft_swap.c
+EXTRA_SRC = ft_strrev.c ft_strsmsh.c ft_swp.c ft_strclen.c
 
 SRCS := $(LIBFT_SRCS) $(PRINTF_SRCS) $(EXTRA_SRC)
 
