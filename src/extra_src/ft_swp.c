@@ -6,7 +6,7 @@
 /*   By: apregitz <apregitz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 12:46:48 by apregitz          #+#    #+#             */
-/*   Updated: 2025/03/18 20:31:54 by apregitz         ###   ########.fr       */
+/*   Updated: 2025/05/06 13:31:27 by apregitz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,13 +31,13 @@ void	ft_swap(void *arr1, void *arr2, size_t size)
 	}
 }
 
-int main(void)
-{
-	int arr1 = 1;
-	printf("%d\n", arr1);
-	printf("%d\n", arr1);
-	ft_swap(&arr1, &arr1, 4);
-	printf("%d\n", arr1);
-	printf("%d\n", arr1);
-	return (0);
-}
+// int main(void)
+// {
+// 	int arr1 = 1;
+// 	printf("%d\n", arr1);
+// 	printf("%d\n", arr1);
+// 	ft_swap(&arr1, &arr1, 4);
+// 	printf("%d\n", arr1);
+// 	printf("%d\n", arr1);
+// 	return (0);
+// }

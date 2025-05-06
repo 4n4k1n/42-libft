@@ -8,7 +8,7 @@ RM = rm -f
 
 SRC_DIR = src
 OBJ_DIR = obj
-VPATH = $(SRC_DIR)/libft_src:$(SRC_DIR)/printf_src:$(SRC_DIR)/extra_src
+VPATH = $(SRC_DIR)/libft_src:$(SRC_DIR)/printf_src:$(SRC_DIR)/extra_src:$(SRC_DIR)/GNL_src
 
 INCLUDES = -Iinc
 
@@ -26,9 +26,11 @@ LIBFT_SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 PRINTF_SRCS = ft_error.c ft_printf.c ft_putchar.c ft_puthex.c \
 	ft_putnbr.c ft_putptr.c ft_putstr.c ft_putunbr.c
 
+GNL_SRCS = get_next_line_bonus.c get_next_line_utils_bonus.c
+
 EXTRA_SRC = ft_strrev.c ft_strsmsh.c ft_swp.c ft_strclen.c ft_kllarr.c
 
-SRCS := $(LIBFT_SRCS) $(PRINTF_SRCS) $(EXTRA_SRC)
+SRCS := $(LIBFT_SRCS) $(PRINTF_SRCS) $(EXTRA_SRC) $(GNL_SRCS)
 
 OBJS := $(addprefix $(OBJ_DIR)/, $(SRCS:.c=.o))
 
